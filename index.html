@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>Guest Room Mobile App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="home" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="b" data-title="Home">
+            <div data-role="content">
+                <img src="images/j.png" width="270" height="225" style="display: block; margin: 0 auto"
+                />
+                <ol data-role="listview" data-inset="true" data-divider-theme="a">
+                    <li data-role="list-divider" data-theme="a"><center>Guest House Mobile App</center></li>
+                
+                    <li data-icon="refresh" data-theme="a">
+                        <a href="#location">Location</a>
+                    </li>
+                    <li data-icon="star" data-theme="a">
+                        <a href="#guestroom">Guest Room</a>
+                    </li>
+                    <li data-icon="gear" data-theme="a">
+                        <a href="#dinning">Dinning</a>
+                    </li>
+                    <li data-icon="grid" data-theme="a">
+                        <a href="#garden">Garden</a>
+                    </li>
+                    <li data-icon="info" data-theme="a">
+                        <a href="#reservation">Reservation</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div data-role="page" id="location" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Location</h1>
+                <a data-role="button" href="#home" data-icon="home" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Dimana Guest House ?</h2>
+                <div class="div-widget">
+                    <img src="images/exterior.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Guest House adalah hotel dengan javanese culture. yang berlokasi di Kaliurang
+                    Yogyakarta. Setiap tamu akan di sambut dengan alunan budaya Jawa yang di kombinasikan
+                    dengan kelengkapan makanan khas dan pemandangan alam yang sejuk dan menyenangkan.</h5>
+                <h5>Untuk melepaskan kepenatan aktivitas sehari-hari, dan relaks dengan menyenangkan
+                    di ruangan dan halaman Guest House. Kami menyediakan berbagai makanan lokal yang
+                    di kombinasikan dengan ramuan internasional sehingga memberikan cita rasa yang tinggi.
+                    Makanan khas Yogya</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+        <div data-role="page" id="guestroom" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Guestroom</h1>
+                <a data-role="button" href="#home" data-icon="home" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Dapatkan pemandangan menarik</h2>
+                <div class="div-widget">
+                    <img src="images/hotel-room.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Setiap kamar di desain dengan suasana pedesaan yang sejuk, di lengkapi dengan perlengkapan
+                    tidur yang memanjakan seperti tempat tidur spring-bed, layar flat TV, bebas akses
+                    internet. Ketika membuka jendela, Anda akan melihat pemandangan Gunung Merapi yang
+                    menawan, serta pada sisi lainnya pemandangan kota Yogya dari atas semakin menambah
+                    menarik pemandangan yang di lihat. Semuanya dapat Anda nikmati dari jendela kamar
+                    Anda</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+        <div data-role="page" id="dinning" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Dinning</h1>
+                <a data-role="button" href="#home" data-icon="home" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content" data-theme="a">
+			
+			<ul data-role="listview" data-theme="a" data-filter="true" data-autodividers="true" data-filter-placeholder="Filter items..." >
+			<li><a href="#satu">
+			<img src="images/gudeg.jpg" class="ui-li-thumb">
+			<h2>Gudeg</h2>
+			<p>Sangat sukar untuk mengatakan gudeg mana yang terenak di Jogja.Nasi Gudeg Khas Jogjakarta</p></a>
+			</li>
+			
+			<li><a href="#dua">
+			<img src="images/bakpia.jpg" class="ui-li-thumb">
+			<h2>Bakpia</h2>
+			<p>Bakpia Patok Khas Jogjakarta</p></a>
+			</li>
+			
+			<li><a href="#tiga">
+			<img src="images/geplak.jpg" class="ui-li-thumb">
+			<h2>Geplak</h2>
+			<p>Geplak Cemilan Khas Jogjakarta</p></a>
+			</li>
+			
+			<li><a href="#empat">
+			<img src="images/sate.jpg" class="ui-li-thumb">
+			<h2>Sate Klathak</h2>
+			<p>Para penggemar sate yang sedang berada di Jogja wajib mencicipi sate klathak Pak Pong</p></a>
+			</li>
+			
+			<li><a href="#lima">
+			<img src="images/nasi.jpg" class="ui-li-thumb">
+			<h2>Nasi Goreng Beringharjo</h2>
+			<p>Kuliner wajib khas Jogja ini memiliki kelezatan kuliner Jawa Cina.</p></a>
+			</li>
+			
+			<li><a href="#enam">
+			<img src="images/mercon.jpg" class="ui-li-thumb">
+			<h2>Oseng Mercon Bu Narti</h2>
+			<p>Mendengar namanya pun kita sudah dapat membayangkan pedasnya.</p></a>
+			</li>
+			
+			
+			</div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+	<div data-role="page" id="satu" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Gudeg Jogjakarta</h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Gudeg Jogjakarta</h2>
+                <div class="div-widget">
+                    <img src="images/gudeg.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Sangat sukar untuk mengatakan gudeg mana yang terenak di Jogja. 
+				Kuliner wajib khas Jogja yang terbuat dari nangka muda yang dimasak dengan santan ini memang sangat populer karena rasanya yang lezat.
+				Ada tiga jenis gudeg, yaitu gudeg basah, gudeg kering, dan gudeg manggar.
+				Gudeg basah adalah gudeg yang disajikan dengan kuah santan nyemek yang gurih.
+				Sedangkan gudeg kering dimasak dalam waktu yang lebih lama hingga kuahnya mengering dan warnanya lebih kecoklatan dengan rasa yang lebih manis. Sementara gudeg manggar adalah terbuat dari bunga kelapa. 
+				Namun gudeg manggar ini tidak terlalu mudah ditemukan. 
+				Salah satu gudeg yang terkenal di Jogja adalah gudeg pawon yang dijual pada saat tengah malam.</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+        <div data-role="page" id="dua" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Bakpia Pathok</h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Bakpia Pathok</h2>
+                <div class="div-widget">
+                    <img src="images/bakpia.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Bakpia termasuk salah satu masakan yang populer dari keluarga Cina atau Tionghoa. 
+				Bakpia yang cukup dikenal salah satunya berasal dari daerah Pathok (Pathuk), Yogyakarta. 
+				Mengingat masyarakat Jogja cukup banyak yang beragama Islam, pada perkembangannya, isi bakpia yang semula daging babi pun diubah menjadi kacang hijau. 
+				Kemudian rasa-rasa dari bakpia dikembangkan menjadi cokelat, keju, kumbu hijau, dan kumbu hitam.</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+		<div data-role="page" id="tiga" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Geplak</h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Geplak Jogjakarta</h2>
+                <div class="div-widget">
+                    <img src="images/geplak.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Geplak adalah makanan khas kota Bantul yang terbuat dari parutan kelapa dan gula pasir atau gula jawa,
+				yang rasanya manis. Ada pula yang menyebutnya sebagai makanan Betawi dengan tambahan bahan berupa tepung beras dan daun jeruk purut .
+				Terdapat pula geplak yang dibuat dari waluh. 
+				Industri geplak umumnya dapat ditemui di daerah Bantul, Yogyakarta, yang kebanyakan diusahakan oleh industri rumah tangga.
+				Selanjutnya jenis penganan ini berkembang meluas akibat permintaan pasar 
+				dan diusahakan tidak hanya di sekitar kota Yogya akan tetapi juga di seluruh nusantara</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+		<div data-role="page" id="empat" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Sate Klathak</h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Sate Klathak</h2>
+                <div class="div-widget">
+                    <img src="images/sate.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Para penggemar sate yang sedang berada di Jogja wajib mencicipi sate klathak Pak Pong. 
+				Sate klathak sedikit berbeda dengan sate umumnya. 
+				Daging kambing yang dipotong kecil-kecil ditusuk dengan menggunakan jerusi besi sepeda. 
+				Jeruji besi ini menjadi penghantar panas yang baik sehingga daging matang hingga ke dalam.
+				Bumbunya pun bukan menggunakan kecap seperti sate kambing umumnya. Bumbu yang dipakai hanyalah garam dengan sedikit ketumbar.
+				Rasanya akan lebih nikmat lagi saat Anda menyantapnya bersama nasi putih yang telah disiram kuah gulai.
+				Para penggemar pedas tinggal menambahkan irisan cabe rawit segar. 
+				Warung Sate Klathak Pak Pong berada di Jalan Imogiri Timur, Bantul, Yogyakarta.</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+		<div data-role="page" id="lima" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Nasi Goreng Beringharjo</h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Nasi Goreng Beringharjo</h2>
+                <div class="div-widget">
+                    <img src="images/nasi.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Kuliner wajib khas Jogja ini memiliki kelezatan kuliner Jawa Cina. 
+				Sedikit menilik sejarahnya, nasi goreng tercipta dari tradisi bangsa Cina yang tak ingin membuang nasi sisa. 
+				Nasi sisa lalu diolah dengan bawang merah, bawang putih, dan kecap menjadi nasi goreng.
+				Salah satu nasi goreng legendaris di Jogja adalah Nasi Goreng Beringharjo. 
+				Nasi goreng yang dimasak dengan ayam dan babi ini sudah dijual sejak tahun 1960an. 
+				Rasanya sangat lezat karena menggunakan bumbu khusus yang sudah diracik sebelum sampai ke tempat penjualan.
+				Aroma bawang putihnya tak terlalu kuat dengan citarasa yang tidak terlalu asin ataupun terlalu manis.
+				Nasi goreng beringharjo ini dapat dijumpai setiap malam pukul 19.00 sampai habis di Jl. Pabringan 1, Yogyakarta.</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+		<div data-role="page" id="enam" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Oseng Mercon </h1>
+                <a data-role="button" href="#dinning" data-icon="back" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Oseng Mercon Bu Narti</h2>
+                <div class="div-widget">
+                    <img src="images/mercon.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Mendengar namanya pun kita sudah dapat membayangkan pedasnya. 
+				Begitu pedasnya hingga terasa panas meledak di mulut.
+				Oseng-oseng ini merupakan daging sapi, kikil, gajih, kulit, dan tulang muda yang dioseng-oseng dengan cabe rawit.
+				Bagi para pencinta pedas, oseng mercon ini luar biasa enaknya saat disantap dengan nasi putih panas.
+				Keringat bercucuran dan lidah terbakar tidak bakalan membuat kapok menyantap oseng mercon ini. 
+				Oseng mercon yang sangat terkenal di Jogja adalah Oseng Mercon Bu Narti di sebuah warung tenda di Jalan KH Ahmad Dahlan, Yogyakarta.</h5>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+		
+        <div data-role="page" id="garden" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Garden</h1>
+                <a data-role="button" href="#home" data-icon="home" data-iconpos="notext">Back</a>
+            </div>
+            <div data-role="content" data-theme="a" >
+			
+			<h2>Garden Of Imagination</h2>
+                <div class="div-widget">
+                    <img src="images/garden.jpg" width="250" height="150" style="display: block; margin: 0 auto"
+                    />
+                </div>
+                <h5>Guest House mempunyai fasilitas yang banyak, salah satunya adalah halaman belakang yang
+				bertumbuh kebun bunga yang indah dan nyaman untuk di kunjungi. Kita dapat memanfaatkan kebun tersebut
+				untuk berkumpul bersama keluarga dan sanak saudara ataupun rekan kerja kita.
+				garden of imagination (kebun imaginasi) </h5>
+            </div>
+			
+			
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+        <div data-role="page" id="reservation" style="background-image: url('images/bg.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="a" data-title="Location">
+            <div data-role="header" data-position="fixed" data-theme="a">
+                <h1>Reservation</h1>
+                <a data-role="button" href="#home" data-icon="home" data-iconpos="notext"
+                data-theme="a" data-inline="true">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Order Ke Kami</h2>
+                <div data-role="fieldcontain">
+                    <label for="text1">Nama Depan</label>
+                    <input type="text" id="text1" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="text2">Nama Keluarga</label>
+                    <input type="text" id="text2" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="text3">Tanggal Datang</label>
+                    <input type="date" id="text3" data-theme="a" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="text4">Tanggal Keluar</label>
+                    <input type="date" id="text4" data-theme="a" />
+                </div>
+                <div data-role="fieldcontain" id="slider1">
+                    <label for="slider1-range">Dewasa</label>
+                    <input type="range" id="slider1-range" value="50" min="0" max="100"
+                    step="1" data-theme="a" data-track-theme="a" />
+                </div>
+                <div data-role="fieldcontain" id="slider2">
+                    <label for="slider2-range">Anak - anak</label>
+                    <input type="range" id="slider2-range" value="50" min="0" max="100"
+                    step="1" data-theme="a" data-track-theme="a" />
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="a">
+                <h1>Copyright's 2014</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
